@@ -10,5 +10,5 @@ Data Generator.py is the python file which generates the data for the sensors an
 
 Mqtt to kafka.py is the python file which consumes data from MQTT topic and publish it to Kafka Topic
 
-Spark Streaming is the python file which subscribe data from Kafka topic and convert the data to DataFrame and writes to MongoDB
+Spark Streaming.py is the python file which subscribe data from Kafka topic and convert the data to DataFrame and writes to MongoDB
 
