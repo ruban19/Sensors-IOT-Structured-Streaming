@@ -24,7 +24,7 @@ kafka_df4.writeStream.format("console").outputMode("update").option("truncate","
 kafka_df4.writeStream.format("mongodb")\
     .queryName("ToMDB")\
     .option("checkpointLocation", "/tmp/pyspark7/")\
-    .option('spark.mongodb.connection.uri', 'mongodb://bi_user:biuser1@mongodb.prod.bdb.ai:27017/test?authSource=bi_testing&readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false')\
+    .option('spark.mongodb.connection.uri', 'mongodb://localhost:27017/')\
     .option('spark.mongodb.database', 'bi_testing')\
     .option('spark.mongodb.collection', 'sensors')\
     .trigger(continuous="10 seconds")\
